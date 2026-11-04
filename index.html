@@ -1,22 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La mia scheda personale</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* STILE DELLA TABELLA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+/* Titolo della tabella */
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    color: #333;
+}
+
+/* Celle della tabella */
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+}
+
+/* Intestazione */
+
+th {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Righe alternate */
+
+tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Effetto mouse */
+
+tr:hover {
+    background-color: #bde0fe;
+    transition: 0.3s;
+}
+
+</style>
 </head>
+
 <body>
 
 <!-- Intestazione della pagina -->
+
 <header>
 <h1>Mi presento!</h1>
 <p>La mia prima pagina con HTML e CSS</p>
 </header>
 
+
 <!-- Contenuto principale -->
+
 <main>
+
 <article class="scheda">
 
 <h2>Angelo Laudicina</h2>
@@ -26,22 +88,35 @@ Ciao! Sono Angelo e frequento un corso di informatica
 e sto imparando a creare pagine web.
 </p>
 
+
+<!-- Lista non ordinata -->
+
 <h3>I miei interessi (UL)</h3>
+
 <ul>
 <li>Programmazione</li>
 <li>Musica</li>
 <li>Sport</li>
 </ul>
 
+
+<!-- Lista ordinata -->
+
 <h3>Le mie attività preferite (OL)</h3>
+
 <ol>
 <li>Studiare informatica</li>
 <li>Allenarmi</li>
 <li>Ascoltare musica</li>
 </ol>
 
+
+<!-- Lista di definizioni -->
+
 <h3>Le mie competenze (DL)</h3>
+
 <dl>
+
 <dt>HTML</dt>
 <dd>Linguaggio utilizzato per creare la struttura delle pagine web.</dd>
 
@@ -50,48 +125,59 @@ e sto imparando a creare pagine web.
 
 <dt>Programmazione</dt>
 <dd>Capacità di scrivere codice per creare programmi e applicazioni.</dd>
+
 </dl>
 
+
+<!-- Tabella -->
+
 <table>
+
 <caption>TABELLA DI PROVA</caption>
+
 <tr>
-  <th>città</th>
-  <th>temperatura</th>
-  <th>umidità</th>
-  <th>fondazione</th>
+<th>Città</th>
+<th>Temperatura</th>
+<th>Umidità</th>
+<th>Fondazione</th>
 </tr>
+
 <tr>
-  <td>Bolzano</td>
-    <td> -1 °C</td>
-    <td> 35%</td>
-    <td>15 A.c.</td>
+<td>Bolzano</td>
+<td>-1 °C</td>
+<td>35%</td>
+<td>15 a.C.</td>
 </tr>
+
 <tr>
-  <td>Palermo</td>
-    <td> 22 °C</td>
-    <td> 67%</td>
-    <td>734 A.c.</td>
+<td>Palermo</td>
+<td>22 °C</td>
+<td>67%</td>
+<td>734 a.C.</td>
 </tr>
-<tr>
-  <td>Palermo</td>
-    <td> 22 °C</td>
-    <td> 67%</td>
-    <td>734 A.c.</td>
-</tr>
+
 </table>
+
+
 <p>
 Il mio obiettivo è
 <strong>creare il mio primo sito web</strong>.
 </p>
+
+
+<!-- Collegamento email -->
 
 <a class="pulsante" href="mailto:Angelolaudicina34@gmail.com">
 Scrivimi
 </a>
 
 </article>
+
 </main>
 
+
 <!-- Piè di pagina -->
+
 <footer>
 <p>Esercitazione di laboratorio — HTML e CSS</p>
 </footer>
