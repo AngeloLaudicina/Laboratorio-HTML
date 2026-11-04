@@ -99,11 +99,11 @@ table, th, td {
 
 caption {
     font-weight: bold;
-    color: blue;
+    color: green;
 }
 
 th {
-    background-color: yellow;
+    background-color: purple;
 }
 
 td {
